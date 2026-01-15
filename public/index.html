@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Social Media Scheduler</h1>
+            <p>Schedule posts for Facebook and Instagram</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Schedule New Post Form -->
+            <div class="card">
+                <h2>Schedule New Post</h2>
+                <form id="scheduleForm">
+                    <div class="form-group">
+                        <label for="platform">Platform</label>
+                        <select id="platform" required>
+                            <option value="">Select Platform</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Enter your post message..." required></textarea>
+                        <span class="char-count" id="charCount">0 characters</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imageUrl">Image URL (Required for Instagram)</label>
+                        <input type="url" id="imageUrl" placeholder="https://example.com/image.jpg">
+                        <small>Paste the direct URL to your image</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scheduledTime">Schedule Date & Time</label>
+                        <input type="datetime-local" id="scheduledTime" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-icon">🚀</span>
+                        Schedule Post
+                    </button>
+                </form>
+            </div>
+
+            <!-- Scheduled Posts List -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Scheduled Posts</h2>
+                    <button class="btn btn-secondary btn-sm" onclick="loadPosts()">
+                        <span class="btn-icon">🔄</span>
+                        Refresh
+                    </button>
+                </div>
+
+                <div id="postsContainer">
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
