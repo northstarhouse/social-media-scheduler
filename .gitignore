@@ -12,6 +12,10 @@ node_modules/
 # Data files
 scheduled-posts.json
 
+# Google Calendar credentials
+credentials.json
+token.json
+
 # OS files
 .DS_Store
 Thumbs.db

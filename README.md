@@ -1,16 +1,17 @@
 # Social Media Scheduler
 
-A Node.js backend service for scheduling posts to Facebook and Instagram. Schedule your social media content in advance and let the system automatically publish at the specified times.
+A Node.js full-stack application for scheduling posts to Facebook and Instagram with Google Calendar integration. Schedule your social media content in advance and let the system automatically publish at the specified times.
 
 ## Features
 
-- Schedule posts for Facebook and Instagram
-- Automatic publishing at scheduled times
-- Support for text and image posts
-- RESTful API for easy integration
-- Persistent storage of scheduled posts
-- Cancel scheduled posts
-- View all scheduled posts
+- 🌐 **Web Interface**: Beautiful, intuitive dashboard for managing posts
+- 📱 **Social Media**: Schedule posts for Facebook and Instagram
+- ⏰ **Auto-Publishing**: Automatic publishing at scheduled times
+- 🖼️ **Image Support**: Support for text and image posts
+- 📅 **Google Calendar Integration**: View your calendar events alongside scheduled posts
+- 🗑️ **Post Management**: Cancel scheduled posts
+- 📊 **Dashboard**: Real-time view of all scheduled posts
+- 💾 **Persistent Storage**: All posts saved automatically
 
 ## Prerequisites
 
@@ -18,6 +19,7 @@ A Node.js backend service for scheduling posts to Facebook and Instagram. Schedu
 - npm or yarn
 - Facebook Developer Account
 - Instagram Business Account
+- Google Account (for Calendar integration, optional)
 
 ## Installation
 
@@ -95,6 +97,24 @@ npm run dev
 ```
 
 The server will start on `http://localhost:3000`
+
+### Using the Web Interface
+
+Simply open your browser to `http://localhost:3000` and you'll see the beautiful web dashboard where you can:
+- Schedule new posts
+- View all scheduled posts
+- Cancel posts
+- Connect Google Calendar
+- View calendar events
+
+### Google Calendar Integration (Optional)
+
+To connect your Google Calendar and see your events in the app:
+
+1. Follow the detailed setup guide: [GOOGLE_CALENDAR_SETUP.md](GOOGLE_CALENDAR_SETUP.md)
+2. Click "Connect Calendar" in the web interface
+3. Authorize the app
+4. Your calendar events will appear alongside your scheduled posts!
 
 ### API Endpoints
 

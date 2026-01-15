@@ -11,9 +11,24 @@
         <header>
             <h1>📅 Social Media Scheduler</h1>
             <p>Schedule posts for Facebook and Instagram</p>
+            <div id="calendarStatus" class="calendar-status"></div>
         </header>
 
         <div class="main-content">
+            <!-- Google Calendar Events -->
+            <div class="card" id="calendarCard" style="display: none;">
+                <div class="card-header">
+                    <h2>📆 Calendar Events</h2>
+                    <button class="btn btn-secondary btn-sm" onclick="loadCalendarEvents()">
+                        <span class="btn-icon">🔄</span>
+                        Refresh
+                    </button>
+                </div>
+                <div id="calendarEventsContainer">
+                    <div class="loading">Loading events...</div>
+                </div>
+            </div>
+
             <!-- Schedule New Post Form -->
             <div class="card">
                 <h2>Schedule New Post</h2>
@@ -72,5 +87,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="calendar.js"></script>
 </body>
 </html>

@@ -294,3 +294,81 @@ header p {
 .toast.error {
     background: #d63031;
 }
+
+/* Google Calendar Styles */
+
+.calendar-status {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calendar-connected {
+    color: #00b894;
+    font-weight: 600;
+}
+
+.calendar-disconnected {
+    color: #fdcb6e;
+    font-weight: 600;
+}
+
+.event-item {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    border-left: 4px solid #667eea;
+}
+
+.event-item:hover {
+    border-color: #667eea;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.1);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.event-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+}
+
+.event-badge {
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.event-location {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 5px 0;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
